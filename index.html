@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var a  = [1,2,6,3,3,4,2,1,1,6]
+		var uniqueArray = []
+		var k = 0;
+		   for(i = 0; i < a.length;i++) {
+		      const element = a[i] 
+		      var isDuplicate = false;
+		      for(j = i+1;j < a.length;j++) {
+		       if(a[j] == element && i !== j) {
+		        isDuplicate = true
+		         
+		       }
+
+		      }
+		       if(!isDuplicate) {
+		       uniqueArray[k] = element;
+		       k++
+		      
+		      }
+		     
+		   }
+		   console.log(uniqueArray);
+	</script>
+
+</body>
+</html>
